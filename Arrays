@@ -40,3 +40,128 @@ for i in moneyArray {
     sumResult += i
 }
 print(sumResult)
+
+
+//Продвинутый уровнень
+//Task 1: создать 10 строк, Создать пустой массив, если в строке элементов более 5, добавить в массив. Если в  строке есть буква "А" заменить ее на любую другую и добавить в массив.
+var str1 = "Russia"
+var str2 = "Ukraine"
+var str3 = "USA"
+var str4 = "Italy"
+var str5 = "Germany"
+var str6 = "Spain"
+var str7 = "Poland"
+var str8 = "Portugal"
+var str9 = "France"
+var str10 = "Holand"
+var countryArray: [String] = []
+if str1.count > 5 && str1.contains("a") {
+    let str1Update = str1.components(separatedBy: "a")
+    let str1UpdateValue = str1Update.joined(separator: "q")
+    countryArray.insert(str1UpdateValue, at: 0)
+} else {
+    print("Значения не соответствует условиям.")
+}
+
+if str2.count > 5 && str2.contains("a") {
+    let str2Update = str2.components(separatedBy: "a")
+    let str2UpdateValue = str2Update.joined(separator: "q")
+    countryArray.insert(str2UpdateValue, at: 0)
+} else {
+    print("Значения не соответствует условиям.")
+}
+
+if str3.count > 5 && str3.contains("a") {
+    let str3Update = str3.components(separatedBy: "a")
+    let str3UpdateValue = str3Update.joined(separator: "q")
+    countryArray.insert(str3UpdateValue, at: 0)
+} else {
+    print("Значения не соответствует условиям.")
+}
+
+if str4.count > 5 && str4.contains("a") {
+    let str4Update = str4.components(separatedBy: "a")
+    let str4UpdateValue = str4Update.joined(separator: "q")
+    countryArray.insert(str4UpdateValue, at: 0)
+} else {
+    print("Значения не соответствует условиям.")
+}
+
+if str5.count > 5 && str5.contains("a") {
+    let str5Update = str5.components(separatedBy: "a")
+    let str5UpdateValue = str5Update.joined(separator: "q")
+    countryArray.insert(str5UpdateValue, at: 0)
+} else {
+    print("Значения не соответствует условиям.")
+}
+
+if str6.count > 5 && str6.contains("a") {
+    let str6Update = str6.components(separatedBy: "a")
+    let str6UpdateValue = str6Update.joined(separator: "q")
+    countryArray.insert(str6UpdateValue, at: 0)
+} else {
+    print("Значения не соответствует условиям.")
+}
+
+if str7.count > 5 && str7.contains("a") {
+    let str7Update = str7.components(separatedBy: "a")
+    let str7UpdateValue = str7Update.joined(separator: "q")
+    countryArray.insert(str7UpdateValue, at: 0)
+} else {
+    print("Значения не соответствует условиям.")
+}
+
+if str8.count > 5 && str8.contains("a") {
+    let str8Update = str8.components(separatedBy: "a")
+    let str8UpdateValue = str8Update.joined(separator: "q")
+    countryArray.insert(str8UpdateValue, at: 0)
+} else {
+    print("Значения не соответствует условиям.")
+}
+
+if str9.count > 5 && str9.contains("a") {
+    let str9Update = str9.components(separatedBy: "a")
+    let str9UpdateValue = str9Update.joined(separator: "q")
+    countryArray.insert(str9UpdateValue, at: 0)
+} else {
+    print("Значения не соответствует условиям.")
+}
+
+if str10.count > 5 && str10.contains("a") {
+    let str10Update = str10.components(separatedBy: "a")
+    let str10UpdateValue = str10Update.joined(separator: "q")
+    countryArray.insert(str10UpdateValue, at: 0)
+} else {
+    print("Значения не соответствует условиям.")
+}
+
+print(countryArray)
+
+//Task 2: создать массив из 30 значений и сделать линейную сортировку
+func randomArray (_ n: Int) -> [Int] {
+     return (0..<n).map {
+         _ in .random(in: 1...30)
+     }
+ }
+var randomValue = randomArray(30)
+randomValue.sort()
+var unsortdeArray = randomArray(30)
+unsortdeArray.sorted()
+
+//Task 6: Сортировка массива по четному-нечетному принципу
+randomArray(10)
+var unsortArray = randomArray(10)
+print(unsortArray)
+var oddArray: [Int] = []
+var evenArray: [Int] = []
+for i in unsortArray {
+    if i % 2 == 1 {
+        oddArray.append(i)
+    } else {
+        evenArray.append(i)
+    }
+}
+oddArray.sort()
+evenArray.sort()
+var resultArray = oddArray + evenArray
+print(resultArray)
