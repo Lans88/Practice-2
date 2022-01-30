@@ -1,0 +1,42 @@
+import UIKit
+import Foundation
+
+//Task 1: создать массив из 12 мальчиков
+var peoplesArray = ["Artem", "Vilen", "Max", "Sasha", "Anton", "Tolya", "Sereja", "Lesha", "Vitalya", "Andrey", "Ruslan", "Makar"]
+
+//Task 2: Добавить 7 девочек в массив через append() и insert()
+peoplesArray.append("Lena")
+peoplesArray.append("Yulya")
+peoplesArray.append("Yana")
+peoplesArray.append("Tanya")
+peoplesArray.insert("Vika", at: 0)
+peoplesArray.insert("Veronika", at: 3)
+peoplesArray.insert("Olya", at: 5)
+print(peoplesArray)
+
+//Task 3: Удалить значения из массива так чтобы мальчиков и девочек стало по 5
+peoplesArray.remove(at: 0)
+peoplesArray.remove(at: 1)
+peoplesArray.remove(at: 2)
+peoplesArray.remove(at: 3)
+peoplesArray.remove(at: 6)
+peoplesArray.remove(at: 7)
+peoplesArray.remove(at: 8)
+peoplesArray.remove(at: 7)
+peoplesArray.remove(at: 9)
+print(peoplesArray)
+print(peoplesArray.count)
+
+//Task 4: создать 2 массива и объединить их в один
+var valueOne = [3, 2, 1, 0, 5, 4]
+var valueTwo = [10, 6, 9, 7, 8]
+var valueThree = valueOne + valueTwo
+print(valueThree)
+
+//Task 6: Создать массив из чисел и посчитать сумму элементов
+var moneyArray = [1, 5, 10, 20, 50, 100]
+var sumResult = 0
+for i in moneyArray {
+    sumResult += i
+}
+print(sumResult)
